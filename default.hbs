@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Theme: So Clean
+Description: A clean and simple theme for Ghost blogging platform
+URI: http://github.com/hashable/so-clean/
+Author: Darryl Dias
+Author URI: http://darryldias.me
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<title>{{meta_title}}</title>
+
+	{{ghost_head}}
+	<!-- Asset links -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+	<link href="{{asset "/css/screen.css"}}" media="screen" rel="stylesheet" />
+	<link rel="shortcut icon" href="{{asset "favicon.ico" }}" type="image/x-icon">
+
+</head>
+<body class="{{body_class}}" {{#if @blog.cover}} style="background:url('{{@blog.cover}}');background-size:cover;background-repeat:no-repeat;"{{else}}style="background-color:#fffaf2;"{{/if}}>
+	<main>
+		<header>
+			<a class="logo" href="{{@blog.url}}" title="{{@blog.description}}">{{@blog.title}}</a>
+			<!-- Main Menu -->
+			{{navigation}}
+			<hr/>
+		</header>
+
+		{{{body}}}
+		<hr/>
+		<small class="credit">Powered by <a href="https://github.com/hashable/so-clean" title="So Clean">So Clean</a> and <a href="https://ghost.org" title="Ghost">Ghost</a>, Created by <a href="http://darryldias.me" title="Darryl Dias: Developer">Darryl Dias</a></small>
+	</footer>
+</main>
+{{ghost_foot}}
+</body>
+</html>
