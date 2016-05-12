@@ -5,10 +5,10 @@ A clean and simple theme for Ghost blogging platform, it lightweight and the ver
 Here are a few screenshots.
 
 Home page
-![So Clean home page](http://cdn.darryldias.me/images/screenshots/themes/so-clean/so-clean-home-screenshot.png)
+![So Clean home page](https://darryldias.me/images/so-clean-home-page.png)
 
 Article page
-![So Clean article page](http://cdn.darryldias.me/images/screenshots/themes/so-clean/so-clean-article-screenshot.png)
+![So Clean article page](https://darryldias.me/images/so-clean-post-page.png)
 
 Copy the cloned folder into
 
